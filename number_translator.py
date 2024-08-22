@@ -22,13 +22,25 @@ def int_to_roman(num):
             num -= value
     return roman_numeral
 
-try:
-    arabic_number = int(input("Enter an integer to convert to Roman numerals: "))
-    if arabic_number <= 0:
-        raise ValueError("Number must be greater than 0")
-    print(f"The Roman numeral for {arabic_number} is {int_to_roman(arabic_number)}")
-except ValueError as e:
-    print(f"Invalid input: {e}")
+# try:
+#     arabic_number = int(input("Enter an integer to convert to Roman numerals: "))
+#     if arabic_number <= 0:
+#         raise ValueError("Number must be greater than 0")
+#     print(f"The Roman numeral for {arabic_number} is {int_to_roman(arabic_number)}")
+# except ValueError as e:
+#     print(f"Invalid input: {e}")
+
+def main():
+    try:
+        arabic_number = int(input("Enter an integer to convert to Roman numerals: "))
+        if arabic_number <= 0:
+            raise ValueError("Number must be greater than 0")
+        print(f"The Roman numeral for {arabic_number} is {int_to_roman(arabic_number)}")
+    except ValueError as e:
+        print(f"Invalid input: {e}")
+
+if __name__ == "__main__":
+    main()
 
 
 # Example inputs and outputs:
