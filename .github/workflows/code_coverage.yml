@@ -2,24 +2,22 @@ name: CodeCov
 on: [push]
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
-    env:
-      OS: ubuntu-latest
-      PYTHON: '3.x'
+
     steps:
-    - uses: checkout@v2
-      with:
-        fetch-depth: ‘2’
+    - uses: actions/checkout@v3
 
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
+        
     - name: Generate Report
       run: |
         pip install coverage
         coverage run -m unittest
+        
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v2
 
