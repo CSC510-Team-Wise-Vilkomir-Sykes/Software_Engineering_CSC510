@@ -1,0 +1,19 @@
+name: Run pylint
+on: [push]
+
+jobs:
+  pyright:
+    name: Run pyright
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install pyright
+      - name: Run pyright
+        run: |
+          pyright hw2/*.py

@@ -8,7 +8,9 @@
 ![Platform](https://img.shields.io/badge/platform-Linux-yellow)
 ![Run Tests On Push](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/python-app.yml/badge.svg)
 ![Code Coverage](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/code_coverage.yml/badge.svg)
-
+![autopep8](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/autopep8.yml/badge.svg)
+![pylint](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pylint.yml/badge.svg)
+![pyright](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pyright.yml/badge.svg)
 
 
 ## License

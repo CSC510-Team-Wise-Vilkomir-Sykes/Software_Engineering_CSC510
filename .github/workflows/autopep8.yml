@@ -1,0 +1,19 @@
+name: Run autopep8
+on: [push]
+
+jobs:
+  autopep8:
+    name: Run autopep8
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install autopep8
+      - name: Run autopep8
+        run: |
+          autopep8 --in-place --aggressive --aggressive hw2/*.py

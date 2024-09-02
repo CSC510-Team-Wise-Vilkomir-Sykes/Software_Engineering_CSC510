@@ -1,0 +1,19 @@
+name: Run pylint
+on: [push]
+
+jobs:
+  pylint:
+    name: Run pylint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install pylint
+      - name: Run pylint
+        run: |
+          pylint hw2/*.py
