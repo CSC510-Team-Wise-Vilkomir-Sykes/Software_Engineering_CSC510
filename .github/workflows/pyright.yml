@@ -1,4 +1,4 @@
-name: Run pylint
+name: Run pyright
 on: [push]
 
 jobs:
