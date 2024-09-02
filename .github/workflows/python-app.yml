@@ -21,7 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        
+
+    - name: Enter HW 1 directory
+      run: cd hw1
 
     - name: Run tests
       run: |
