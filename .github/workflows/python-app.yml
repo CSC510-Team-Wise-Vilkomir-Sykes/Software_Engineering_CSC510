@@ -25,4 +25,4 @@ jobs:
     - name: Run tests
       run: |
        pip install pytest pytest-cov
-       pytest hw1/numbers_test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+       pytest **/*_test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
