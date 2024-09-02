@@ -11,7 +11,7 @@ def merge_sort(arr):
     Returns:
     A sorted array containing the elements of the input array in ascending order
     """
-    if len(arr) == 1:
+    if len(arr) <= 1:
         return arr
 
     half = len(arr) // 2
