@@ -1,4 +1,4 @@
-import pytest
+
 from hw2_debugging import merge_sort 
 
 # Test Case 1: Unsorted array
