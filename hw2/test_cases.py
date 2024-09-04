@@ -1,5 +1,5 @@
-
-from hw2_debugging import merge_sort 
+"""Module provides test cases for group project"""
+from hw2_debugging import merge_sort
 
 # Test Case 1: Unsorted array
 def test_unsorted():
