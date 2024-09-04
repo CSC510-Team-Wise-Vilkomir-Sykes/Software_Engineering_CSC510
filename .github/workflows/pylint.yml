@@ -14,7 +14,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pylint
-          pip install pytest
       - name: Run pylint
         run: |
           pylint hw2/*.py
