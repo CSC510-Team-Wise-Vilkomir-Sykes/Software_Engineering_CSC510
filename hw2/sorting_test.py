@@ -10,7 +10,7 @@ def test_unsorted():
 def test_sorted():
     """Test Case 2: Sorted array"""
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 111]
-    sorted_arr = [10, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 111]
+    sorted_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 111]
     assert merge_sort(arr) == sorted_arr
 
 def test_empty():
