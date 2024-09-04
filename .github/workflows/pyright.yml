@@ -14,7 +14,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pyright
-          pip install pytest
       - name: Run pyright
         run: |
           pyright hw2/*.py
