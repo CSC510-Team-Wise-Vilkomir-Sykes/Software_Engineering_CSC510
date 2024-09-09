@@ -23,11 +23,13 @@ jobs:
         python -m pip install --upgrade pip
 
     - name: Run HW1 tests
+      if: always()
       run: |
        pip install pytest pytest-cov
        pytest hw1/*_test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
     - name: Run HW2 tests
+      if: always()
       run: |
        pip install pytest pytest-cov
        pytest hw2/*_test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
