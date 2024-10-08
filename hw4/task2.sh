@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -rl "sample" dataset1 | xargs grep -o "CSC510" | uniq -c |sed 's/:CSC510//' | grep -E '^[ ]*([3-9]|[0-9]{2,}) ' | while read -r count file; do echo "$count $(stat -c%s "$file") $file"; done | sort -k1,1nr -k2,2nr | sed 's/file_/filtered_/'
+grep -rl "sample" dataset1 | xargs grep -o "CSC510" | uniq -c |sed 's/:CSC510//' | grep -E '^[ ]*([3-9]|[0-9]{2,}) ' | gawk '{count=$1; file=$2; "stat -c%s " file | getline size; print count, size, file}' | sort -k1,1nr -k2,2nr | sed 's/file_/filtered_/'
