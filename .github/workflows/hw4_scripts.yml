@@ -12,6 +12,7 @@ jobs:
       if: always()
       run: |
         cd hw4/scripts
+        ls
         chmod +x ./task1.sh
         ls
         ./task1.sh
@@ -20,6 +21,7 @@ jobs:
       if: always()
       run: |
         cd hw4/scripts
+        ls
         chmod +x ./task2.sh
         ls
         ./task1.sh
@@ -28,5 +30,7 @@ jobs:
       if: always()
       run: |
         cd hw4/scripts
-        chmod +x ./task3.sls
+        ls
+        chmod +x ./task3.sh
+        ls
         ./task1.sh
