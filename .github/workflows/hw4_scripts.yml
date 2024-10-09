@@ -12,25 +12,19 @@ jobs:
       if: always()
       run: |
         cd hw4/scripts
-        ls
         chmod +x ./task1.sh
-        ls
-        bash ./task1.sh
+        ./task1.sh
 
     - name: Run task 2
       if: always()
       run: |
         cd hw4/scripts
-        ls
         chmod +x ./task2.sh
-        ls
-        bash ./task1.sh
+        ./task2.sh
 
     - name: Run task 3
       if: always()
       run: |
         cd hw4/scripts
-        ls
         chmod +x ./task3.sh
-        ls
-        bash ./task1.sh
+        ./task3.sh
