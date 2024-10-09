@@ -15,7 +15,7 @@ jobs:
         ls
         chmod +x ./task1.sh
         ls
-        ./task1.sh
+        bash ./task1.sh
 
     - name: Run task 2
       if: always()
@@ -24,7 +24,7 @@ jobs:
         ls
         chmod +x ./task2.sh
         ls
-        ./task1.sh
+        bash ./task1.sh
 
     - name: Run task 3
       if: always()
@@ -33,4 +33,4 @@ jobs:
         ls
         chmod +x ./task3.sh
         ls
-        ./task1.sh
+        bash ./task1.sh
