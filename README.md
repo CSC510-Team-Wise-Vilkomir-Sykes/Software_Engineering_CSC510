@@ -11,6 +11,7 @@
 [![autopep8](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/autopep8.yml/badge.svg)](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/autopep8.yml)
 [![pylint](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pylint.yml/badge.svg)](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pylint.yml)
 [![pyright](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pyright.yml/badge.svg)](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/pyright.yml)
+[![hw4](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/hw4_scripts.yml/badge.svg)](https://github.com/CSC510-Team-Wise-Vilkomir-Sykes/Software_engineering_CSC510/actions/workflows/hw4_scripts.yml)
 
 
 ## License
