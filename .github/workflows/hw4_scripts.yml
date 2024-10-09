@@ -1,0 +1,30 @@
+name: HW4 Scripts
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+       
+    - name: Run task 1
+      if: always()
+      run: |
+        cd hw4/scripts
+        chmod +x ./task1.sh
+        ./task1.sh
+
+    - name: Run task 2
+      if: always()
+      run: |
+        cd hw4/scripts
+        chmod +x ./task2.sh
+        ./task1.sh
+
+    - name: Run task 3
+      if: always()
+      run: |
+        cd hw4/scripts
+        chmod +x ./task3.sh
+        ./task1.sh
