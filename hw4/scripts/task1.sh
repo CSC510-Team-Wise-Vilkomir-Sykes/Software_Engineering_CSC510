@@ -4,7 +4,7 @@
 
 # echo $(ps aux)
 
-cd .. && chmod +x infinite.sh && infinite.sh
+cd .. && chmod +x infinite.sh && ./infinite.sh
 
 pid=$(ps aux | grep infinite.sh | awk '{print $2}')
 
