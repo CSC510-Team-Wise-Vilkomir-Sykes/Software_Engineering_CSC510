@@ -13,6 +13,7 @@ jobs:
       run: |
         cd hw4/scripts
         chmod +x ./task1.sh
+        ls
         ./task1.sh
 
     - name: Run task 2
@@ -20,11 +21,12 @@ jobs:
       run: |
         cd hw4/scripts
         chmod +x ./task2.sh
+        ls
         ./task1.sh
 
     - name: Run task 3
       if: always()
       run: |
         cd hw4/scripts
-        chmod +x ./task3.sh
+        chmod +x ./task3.sls
         ./task1.sh
