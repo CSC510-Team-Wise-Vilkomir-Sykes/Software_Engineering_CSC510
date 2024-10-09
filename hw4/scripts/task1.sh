@@ -2,7 +2,9 @@
 
 # Using grep, find the pid of the infinite.sh script
 
-echo $(ps aux)
+# echo $(ps aux)
+
+cd .. && chmod +x infinite.sh && infinite.sh
 
 pid=$(ps aux | grep infinite.sh | awk '{print $2}')
 
